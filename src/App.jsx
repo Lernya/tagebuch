@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import DiaryList from './Components/DiaryList';
+import AddEntryModal from './Components/AddEntryModal';
+import EntryModal from './Components/EntryModal';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [entries, setEntries] = useState([]);
+  const [selectedEntry, setSelectedEntry] = useState(null);
+  const [showAddEntryModal, setShowAddEntryModal] = useState(false);
+  const [showEntryModal, setShowEntryModal] = useState(false);
+
+  // Load entries from localStorage on mount
+  useEffect(() => {
+    const storedEntries =
+      JSON.parse(localStorage.getItem('diaryEntries')) || [];
+    setEntries(storedEntries);
+  }, []);
+
+  // Function to add entry
+  const addEntry = (newEntry) => {
+    const updatedEntries = [newEntry, ...entries];
+    setEntries(updatedEntries);
+    localStorage.setItem('diaryEntries', JSON.stringify(updatedEntries));
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+    <div className='app-container'>
+      <button onClick={() => setShowAddEntryModal(true)}>Add Entry</button>
+      <DiaryList
+        entries={entries}
+        onEntryClick={(entry) => {
+          setSelectedEntry(entry);
+          setShowEntryModal(true);
+        }}
+      />
+      {showAddEntryModal && (
+        <AddEntryModal
+          onClose={() => setShowAddEntryModal(false)}
+          onAddEntry={addEntry}
+        />
+      )}
+      {showEntryModal && (
+        <EntryModal
+          entry={selectedEntry}
+          onClose={() => setShowEntryModal(false)}
+        />
+      )}
+    </div>
+  );
+};
+export default App;
