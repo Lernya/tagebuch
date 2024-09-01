@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -30,6 +29,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -69,5 +69,14 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-block: 2rem;
+
+  h2 {
+    color: White;
   }
 }
