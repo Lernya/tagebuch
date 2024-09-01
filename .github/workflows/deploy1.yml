@@ -4,9 +4,9 @@
   name: Statischen Inhalt auf Pages bereitstellen
 
   on:
-  # Wird bei Pushes auf den Standard-Zweig ausgeführt
-  push:
-    branches: ['main']
+  ## Wird bei Pushes auf den Standard-Zweig ausgeführt
+  #push:
+  #  branches: ['main']
 
   # Ermöglicht das manuelle Ausführen dieses Workflows über das Actions-Tab
   workflow_dispatch:
