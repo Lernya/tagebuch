@@ -40,6 +40,7 @@ const EntryForm = () => {
         id="title"
         value={formState.title}
         onChange={handleChange}
+        required
       />
       <label htmlFor="date">Date</label>
       <input
@@ -48,6 +49,7 @@ const EntryForm = () => {
         id="date"
         value={formState.date}
         onChange={handleChange}
+        required
       />
 
       <label htmlFor="imageUrl">Image URL</label>
@@ -57,6 +59,7 @@ const EntryForm = () => {
         id="imageUrl"
         value={formState.imageUrl}
         onChange={handleChange}
+        required
       />
 
       <label htmlFor="message">Content</label>
@@ -65,6 +68,7 @@ const EntryForm = () => {
         id="content"
         value={formState.content}
         onChange={handleChange}
+        required
       ></textarea>
       <button>Submit</button>
     </form>
