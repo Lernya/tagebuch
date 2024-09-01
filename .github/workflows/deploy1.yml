@@ -1,13 +1,22 @@
+# Quelle der Vorlage: https://de.vitejs.dev/guide/static-deploy#github-pages
+
+# Einfacher Workflow zur Bereitstellung von statischem Inhalt auf GitHub-Pages
 name: Statischen Inhalt auf Pages bereitstellen
 
 on:
+  ## Wird bei Pushes auf den Standard-Zweig ausgeführt
+  #push:
+  #  branches: ['main']
   workflow_dispatch:
 
+# Setzt die GITHUB_TOKEN-Berechtigungen, um die Bereitstellung auf GitHub-Pages zu ermöglichen
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Ermöglicht eine gleichzeitige Bereitstellung. Wenn Wenn ein neues Deployment gestartet wird, 
+# während ein anderes noch läuft, wird das ältere abgebrochen.
 concurrency:
   group: 'pages'
   cancel-in-progress: true
@@ -35,6 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+        # Upload des dist-Ordners
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
