@@ -24,7 +24,7 @@ const App = () => {
   };
 
   return (
-    <div className='app-container p-4 bg-indigo-300'>
+    <div className='app-container p-4 bg-indigo-400'>
       <button onClick={() => setShowAddEntryModal(true)}>Add Entry</button>
       <DiaryList
         entries={entries}

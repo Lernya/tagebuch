@@ -1,12 +1,13 @@
   # Quelle https://de.vitejs.dev/guide/static-deploy
+  # blablub2
 
   # Einfacher Workflow zur Bereitstellung von statischem Inhalt auf GitHub Pages
   name: Statischen Inhalt auf Pages bereitstellen
 
   on:
-  # # Wird bei Pushes auf den Standard-Zweig ausgeführt
-  # push:
-  #   branches: ['main']
+# # Wird bei Pushes auf den Standard-Zweig ausgeführt
+# push:
+#   branches: ['main']
 
   # Ermöglicht das manuelle Ausführen dieses Workflows über das Actions-Tab
   workflow_dispatch:
@@ -50,5 +51,6 @@ jobs:
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
+
         uses: actions/deploy-pages@v4
 

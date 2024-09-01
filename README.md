@@ -1,6 +1,8 @@
 # tagebuch
 Ein persönliches Tagebuch als App
 
+"tagebuch" – ein Übungsprojekt im Team, bei dem eine interaktive App unter Anwendung von React entwickelt wird.
+
 Seite online: 🌐 **https://lernya.github.io/tagebuch**
 
 
