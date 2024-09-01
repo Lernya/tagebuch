@@ -21,8 +21,6 @@ Seite online: 🌐 **https://lernya.github.io/tagebuch**
 
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=fff) <img src="https://img.shields.io/badge/daisyUI-1ad1a5?style=for-the-badge&logo=daisyui&logoColor=white">
 
-[![git](https://badgen.net/badge/icon/git?icon=git&label)](https://git-scm.com)
-
 <a style="vertical-align:middle" href="https://git-scm.com"><img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=for-the-badge" /></a>
 <a style="vertical-align:middle" href="https://github.com/Lernya/tagebuch"><img src="https://img.shields.io/badge/GitHub-181717?logo=git&logoColor=fff&style=for-the-badge" /></a> <a href="https://github.com/Lernya/tagebuch"> 🗄️ https://github.com/Lernya/tagebuch</a>  
 <a style="vertical-align:middle" href="https://lernya.github.io/tagebuch"><img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white" /><a href="https://lernya.github.io/tagebuch"> 🌐 https://lernya.github.io/tagebuch</a>  
