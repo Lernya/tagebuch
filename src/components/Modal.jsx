@@ -9,9 +9,10 @@ const Modal = ({ isOpen, entry, onClose }) => {
   const { title, content, date, image } = entry;
 
   return ReactDOM.createPortal(
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75">
-      <div className="bg-black rounded-lg shadow-lg p-6 w-11/12 md:w-1/3">
+    <div id="modal" className="fixed inset-0 flex items-center justify-center bg-opacity-75">
+      <div id="modalwindow" className="rounded-lg shadow-lg p-6 pb-0 w-11/12 md:w-1/3">
         <h2 className="text-2xl font-semibold mb-4">{title || "No Title"}</h2>
+        <div id="entryblock">
         {image && (
           <img
             src={image}
@@ -19,15 +20,16 @@ const Modal = ({ isOpen, entry, onClose }) => {
             className="w-full h-auto mb-4 rounded-lg"
           />
         )}
-        <p className="mb-4">{content || "No Content"}</p>
+        <p id="entrycontent" className="mb-4">{content || "No Content"}</p>
         {date && (
           <p className="text-sm text-gray-400">
             {new Date(date).toLocaleDateString()}
           </p>
         )}
-        <button
+        </div>
+        <button id="modalbutton"
           onClick={onClose}
-          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+          className="mt-4 px-4 py-1 bg-blue-500 text-white rounded-lg"
         >
           Close
         </button>

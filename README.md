@@ -7,9 +7,9 @@ Seite online: 🌐 **https://lernya.github.io/tagebuch**
 
 
 
-🚧 🛠️  Bitte etwas Geduld. Die App ist im Aufbau und noch läuft sie nicht.
+<!--🚧 🛠️  Bitte etwas Geduld. Die App ist im Aufbau und noch läuft sie nicht.-->
 
-<!-- Also nicht einmal ![https://github.com/Webmedia20/skip-navigation/pulls](https://badgen.net/badge/status/alpha/green) -->
+![https://github.com/Webmedia20/skip-navigation/pulls](https://badgen.net/badge/status/alpha/green)
 
 --- 
 

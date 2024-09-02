@@ -31,8 +31,8 @@ const EntryForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
-      <h2 className="text-3xl">Add your Entry</h2>
+    <form id="entryform" onSubmit={handleSubmit} className="contact-form">
+      <h2  className="text-3xl">Add your entry</h2>
       <label htmlFor="name">Titel</label>
       <input
         type="text"
@@ -70,7 +70,7 @@ const EntryForm = () => {
         onChange={handleChange}
         required
       ></textarea>
-      <button>Submit</button>
+      <button id="submitbutton">Save your entry</button>
     </form>
   );
 };

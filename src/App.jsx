@@ -4,7 +4,7 @@ import EntryList from "./components/EntryList.jsx";
 const App = () => {
   return (
     <>
-      <h1>Your Personal Diary</h1>
+      <h1>Personal Diary</h1>
       <EntryForm />
       <EntryList />
     </>

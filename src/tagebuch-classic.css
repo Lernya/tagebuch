@@ -2,6 +2,125 @@
 
 /* indigo-300 #A5B4FC */
 
+
+
 body {
-    background-color: #A5B4FC;
+    background-color: #867666;
+    background-color: #594d46;
+    background-color: #16253d;
+    
+    background-color: #002c54;
+
+    /* muy clarito */
+    color: #eae2d6;
+
+    /* beige */
+    color: #d5c3aa;
+
+    h1 {
+        background-color: #867666;
+        background-color: #16253d;
+        background-color: inherit;
+        text-align: center;
+        padding: 2rem ;
+        margin-top:2rem;
+    }
+
+    h2 {
+        text-align: right;
+    /* beige */
+    color: #d5c3aa;
+    }
+
+    h3 {
+        color: #867666;
+    }
+
+    form {
+        background-color: #16253d;
+        padding: 1.5rem 2rem 0rem 2rem;
+    }
+
+    textarea {
+        background-color: #eae2d6 ;
+        color:#16253d;
+    }
+
+    #submitbutton,
+    #modalbutton {
+        background-color: #594d46;
+        background-color: #868686;
+        color: #eae2d6;
+        color: #16253d;
+        font-weight:700;
+        font-size: large;
+    }
+    #submitbutton {
+        margin:2rem 0;
+    }
+    
+    #submitbutton:hover
+    {
+        background-color: #e1b80d;
+        background-color: #cd7213;
+        background-color: #598234;
+        color: #16253d;
+        font-size:140%;
+    }
+
+    #modalbutton {
+        margin:2rem 1rem;
+    }
+
+    #modalbutton:hover {
+        background-color: #598234;
+        color: #16253d;
+    }
+
+    #entryform label {
+        padding: 1rem 2rem 0.3rem 0;
+
+    }
+
+    #entryform input {
+        background-color: #eae2d6 ;
+        color:#16253d;
+        padding:0.3rem 1rem;
+    }
+
+    input#date {
+        color: #867666;
+        
+
+    }
+    #entrylist {
+        background-color: #16253d;
+        background-color: inherit;
+        text-align: center;
+
+    }
+
+    #modal {
+        background-color: #16253d;
+        background-color: #002c54;
+
+    }
+    #modalwindow {
+        background-color: #16253d;
+        
+    }
+    #entrycontent {
+        color: #eae2d6;
+        
+        
+    }
+    #entryblock {
+        
+        padding:1rem;
+        border:1px solid #594d46;
+        border:1px solid #002c54;
+        box-shadow: 0px 0px 15px 5px #002c54;
+
+    }
 }
+
