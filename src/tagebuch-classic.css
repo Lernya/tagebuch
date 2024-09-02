@@ -24,6 +24,8 @@ body {
         text-align: center;
         padding: 2rem ;
         margin-top:2rem;
+        font-size: 3rem; 
+        font-weight: 500;
     }
 
     h2 {
