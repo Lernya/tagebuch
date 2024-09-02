@@ -26,7 +26,7 @@ const EntryList = () => {
   };
 
   return (
-    <div>
+    <div id="entrylist">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {entries.map((entry, index) => (
           <div
